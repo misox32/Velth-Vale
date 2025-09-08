@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
     { id: "w8", name: "Breitling Navitimer", price: 5500, img: "https://www.reeds.com/media/catalog/product/cache/38c3c1b8e53ef11aa9803a5390245afc/b/r/breitling_navitimer_b01_chronograph_46_black_dial_black_leather_strap_watch__ab0137211b1p1-1-20246328-hx603fb16a.jpg", category: "Aviation",
       desc: "Breitling Navitimer is an aviator's classic with a slide-rule bezel and chronograph functions that support in-flight calculations. Its robust mechanical movement, high-contrast dial, and distinctive styling make it a top choice for pilots and enthusiasts. Combining technical utility with refined design, the Navitimer is a professional-grade timepiece that celebrates aviation heritage and precision engineering." },
 
-    { id: "w9", name: "Cartier Santos", price: 7000, img: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.swisswatchglobal.com%2Fproduct%2Fcartier%2Fsantos-de-cartier-watch-wssa0061%2F&psig=AOvVaw2npGp1HkwI0ZkP6OtDid_U&ust=1757436461429000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCMDe6JHPyY8DFQAAAAAdAAAAABBF", category: "Luxury",
+    { id: "w9", name: "Cartier Santos", price: 7000, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ_pTs3JI5ywMq9vqGdxNsjK0g7jf0E9fB2A&s", category: "Luxury",
       desc: "The Cartier Santos offers iconic elegant design with square case geometry, polished bezels, and refined bracelet options. Built with premium materials and meticulous finishing, it blends dress sophistication with everyday functionality. A Cartier watch is an expression of style and heritage—Santos models present a harmony of comfort, visual identity, and luxury watchmaking tradition." },
 
     { id: "w10", name: "Tissot Gentleman Powermatic 80", price: 850, img: "https://rocks.ie/cdn/shop/products/02-25745.jpg?v=1696865889", category: "Classic",
@@ -344,3 +344,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
   init();
 });
+
