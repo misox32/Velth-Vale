@@ -3,19 +3,17 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Velth & Vale — Mini Store</title>
+  <title>Watch Vault — Mini Store</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="site-header">
-    <div class="brand">
-      <h1>Velth & Vale</h1>
-    </div>
+    <div class="brand"><h1>Watch Vault</h1></div>
 
     <div class="search-wrap">
-      <input id="searchInput" type="search" placeholder="Search products..." />
-      <select id="categorySelect">
-        <option value="All">All categories</option>
+      <input id="searchInput" type="search" placeholder="Search watches..." />
+      <select id="categorySelect" aria-label="Category filter">
+        <option value="All">All</option>
       </select>
     </div>
 
@@ -30,17 +28,16 @@
   </header>
 
   <main class="main">
-    <!-- PRODUCTS -->
+    <!-- Products -->
     <section id="productsSection" class="products-grid" aria-live="polite"></section>
 
-    <!-- CART -->
+    <!-- Cart panel -->
     <section id="cartSection" class="panel" hidden>
       <h2>Your cart</h2>
       <ul id="cartList" class="cart-list"></ul>
       <div class="cart-summary">
         <div>Total: $<span id="cartTotal">0.00</span></div>
-        <label>
-          Payment:
+        <label>Payment:
           <select id="paymentMethod">
             <option>Credit Card</option>
             <option>PayPal</option>
@@ -51,14 +48,14 @@
       </div>
     </section>
 
-    <!-- ORDERS -->
+    <!-- Orders panel -->
     <section id="ordersSection" class="panel" hidden>
       <h2>My Orders</h2>
       <div id="ordersList" class="orders-list"></div>
     </section>
   </main>
 
-  <!-- SIGNUP MODAL -->
+  <!-- Signup modal -->
   <div id="signupModal" class="modal" aria-hidden="true">
     <div class="modal-inner">
       <button class="modal-close" data-close>&times;</button>
@@ -70,7 +67,7 @@
     </div>
   </div>
 
-  <!-- LOGIN MODAL -->
+  <!-- Login modal -->
   <div id="loginModal" class="modal" aria-hidden="true">
     <div class="modal-inner">
       <button class="modal-close" data-close>&times;</button>
@@ -78,6 +75,14 @@
       <input id="loginEmail" placeholder="Email" type="email" />
       <input id="loginPassword" placeholder="Password" type="password" />
       <button id="loginSubmit" class="btn primary">Login</button>
+    </div>
+  </div>
+
+  <!-- Product details modal (reused) -->
+  <div id="detailsModal" class="modal" aria-hidden="true">
+    <div class="modal-inner details-inner">
+      <button class="modal-close" data-close>&times;</button>
+      <div id="detailsContent"></div>
     </div>
   </div>
 
