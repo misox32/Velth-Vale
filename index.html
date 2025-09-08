@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Velth & Vale — Mini Store</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <h1>Velth & Vale</h1>
+    </div>
+
+    <div class="search-wrap">
+      <input id="searchInput" type="search" placeholder="Search products..." />
+      <select id="categorySelect">
+        <option value="All">All categories</option>
+      </select>
+    </div>
+
+    <nav class="actions">
+      <span id="welcomeMsg" class="welcome"></span>
+      <button id="btnSignup" class="btn small">Sign up</button>
+      <button id="btnLogin" class="btn small">Login</button>
+      <button id="btnCart" class="btn small">Cart (<span id="cartCount">0</span>)</button>
+      <button id="btnOrders" class="btn small">My Orders</button>
+      <button id="btnLogout" class="btn small" style="display:none;">Logout</button>
+    </nav>
+  </header>
+
+  <main class="main">
+    <!-- PRODUCTS -->
+    <section id="productsSection" class="products-grid" aria-live="polite"></section>
+
+    <!-- CART -->
+    <section id="cartSection" class="panel" hidden>
+      <h2>Your cart</h2>
+      <ul id="cartList" class="cart-list"></ul>
+      <div class="cart-summary">
+        <div>Total: $<span id="cartTotal">0.00</span></div>
+        <label>
+          Payment:
+          <select id="paymentMethod">
+            <option>Credit Card</option>
+            <option>PayPal</option>
+            <option>Cash on Delivery</option>
+          </select>
+        </label>
+        <button id="checkoutBtn" class="btn primary">Place Order</button>
+      </div>
+    </section>
+
+    <!-- ORDERS -->
+    <section id="ordersSection" class="panel" hidden>
+      <h2>My Orders</h2>
+      <div id="ordersList" class="orders-list"></div>
+    </section>
+  </main>
+
+  <!-- SIGNUP MODAL -->
+  <div id="signupModal" class="modal" aria-hidden="true">
+    <div class="modal-inner">
+      <button class="modal-close" data-close>&times;</button>
+      <h3>Create account</h3>
+      <input id="signName" placeholder="Full name" />
+      <input id="signEmail" placeholder="Email" type="email" />
+      <input id="signPassword" placeholder="Password" type="password" />
+      <button id="signSubmit" class="btn primary">Sign up</button>
+    </div>
+  </div>
+
+  <!-- LOGIN MODAL -->
+  <div id="loginModal" class="modal" aria-hidden="true">
+    <div class="modal-inner">
+      <button class="modal-close" data-close>&times;</button>
+      <h3>Login</h3>
+      <input id="loginEmail" placeholder="Email" type="email" />
+      <input id="loginPassword" placeholder="Password" type="password" />
+      <button id="loginSubmit" class="btn primary">Login</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
